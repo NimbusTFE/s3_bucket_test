@@ -8,7 +8,7 @@ data "aws_s3_bucket" "selected" {
 
 resource "aws_s3_bucket_object" "example" {
   key                    = "myname"
-  bucket                 = "${data.aws_s3_bucket.selected.id"
+  bucket                 = "${data.aws_s3_bucket.selected.id}"
   content                = "Roger"
 }
 
